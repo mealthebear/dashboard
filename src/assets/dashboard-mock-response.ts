@@ -25,6 +25,7 @@ type ElementType = 'DATA_POINT' | 'DATA_SET';
 
 export interface Element {
   name: string;
+  label?: string;
   type: ElementType;
   displayName?: string;
   width: number;
@@ -213,26 +214,31 @@ const newLayoutResponse: LayoutResponse = {
       elements: [
         {
           name: 'mediaSpend',
+          label: 'Media Spend',
           type: 'DATA_POINT',
           width: 2
         },
         {
           name: 'percSalesI',
+          label: '% Sales (i)',
           type: 'DATA_POINT',
           width: 2
         },
         {
           name: 'salesI',
+          label: 'Sales (i)',
           type: 'DATA_POINT',
           width: 4
         },
         {
           name: 'cpoI',
+          label: 'CPO (i)',
           type: 'DATA_POINT',
           width: 2
         },
         {
           name: 'netProfitIPerDollar',
+          label: 'Net Profit (i) / $',
           type: 'DATA_POINT',
           width: 2
         }
