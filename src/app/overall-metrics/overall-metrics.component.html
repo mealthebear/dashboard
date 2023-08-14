@@ -1,0 +1,9 @@
+<div class="overall-metrics-container">
+  <h3 class="light-bottom-border metric-title">{{ label }}</h3>
+  <div class="overall-metrics-stats-container">
+    <div class="stat-container" *ngFor="let element of dataLabelSets">
+      <label class="stat-label">{{ element[0] }}</label>
+      <p class="stat-value">{{ element[1] }}</p>
+    </div>
+  </div>
+</div>
