@@ -1,4 +1,4 @@
-interface DataResponse {
+export interface DataResponse {
   [index: string]: string | number;
 }
 
@@ -12,7 +12,7 @@ interface FullDataResponse {
   dataSets: DatasetResponse[];
 }
 
-interface ElementGroup {
+export interface ElementGroup {
   name: string;
   label: string;
   type: ElementType;
@@ -23,7 +23,7 @@ interface ElementGroup {
 
 type ElementType = 'DATA_POINT' | 'DATA_SET';
 
-interface Element {
+export interface Element {
   name: string;
   type: ElementType;
   displayName?: string;
