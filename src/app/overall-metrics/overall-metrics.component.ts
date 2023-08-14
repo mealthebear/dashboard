@@ -8,10 +8,15 @@ import { Element, DataResponse } from 'src/assets/dashboard-mock-response';
   styleUrls: ['./overall-metrics.component.css']
 })
 export class OverallMetricsComponent {
+  label: string = '';
   layout: Element[] = [];
   data: DataResponse = {};
 
   constructor(public metricsService: MetricsService) {}
+
+  getOverallMetricsLabel(): void {
+    this.metricsService.getOverallMetricsLabel().subscribe(label => this.label = label);
+  }
 
   getOverallMetricsLayout(): void {
     this.metricsService.getOverallMetricsLayout().subscribe(layout => this.layout = layout);

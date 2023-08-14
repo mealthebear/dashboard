@@ -8,6 +8,10 @@ import { Element, DataResponse } from 'src/assets/dashboard-mock-response';
 })
 export class MetricsService {
   constructor() { }
+  getOverallMetricsLabel(): Observable<string> {
+    const overallMetricsLabel = of(newLayoutResponse.layout[0].label);
+    return overallMetricsLabel;
+  }
   getOverallMetricsLayout(): Observable<Element[]> {
     const overallMetricsLayout = of(newLayoutResponse.layout[0].elements);
     return overallMetricsLayout;
