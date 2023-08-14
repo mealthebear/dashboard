@@ -3,3 +3,19 @@
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.theme-primary {
+  color: #2f009c;
+}
+
+.theme-primary-background {
+  background-color: #2f009c;
+}
+
+.theme-secondary {
+  color: #e36a00;
+}
+
+.theme-secondary-background {
+  background-color: #e36a00;
+}
