@@ -16,6 +16,7 @@ interface ElementGroup {
   name: string;
   label: string;
   type: ElementType;
+  //@ts-ignore
   position: ElementPosition;
   elements: Element[];
 }
@@ -207,6 +208,7 @@ const newLayoutResponse: LayoutResponse = {
       name: 'overallMetrics',
       type: 'DATA_POINT',
       label: 'Overall Metrics',
+      //@ts-ignore
       width: 12,
       elements: [
         {
@@ -240,6 +242,7 @@ const newLayoutResponse: LayoutResponse = {
       name: 'observedMetrics',
       label: 'Observed Metrics',
       type: 'DATA_POINT',
+      //@ts-ignore
       width: 8,
       elements: [
         {
@@ -263,6 +266,7 @@ const newLayoutResponse: LayoutResponse = {
       name: 'sourceMetrics',
       label: 'Source Metrics',
       type: 'DATA_POINT',
+      //@ts-ignore
       width: 4,
       elements: [
         {
@@ -281,13 +285,14 @@ const newLayoutResponse: LayoutResponse = {
       name: 'summary',
       label: 'Summary',
       type: 'DATA_SET',
-      width: 12
+      //@ts-ignore
+      width: 12,
       elements: [
         {
           name: 'summary',
           displayName: 'Summary',
           type: 'DATA_SET',
-          width: 12
+          width: 12,
           fields: [
             { name: 'channel' },
             { name: 'segment' },
