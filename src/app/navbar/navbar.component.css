@@ -1,0 +1,30 @@
+.navbar {
+  background-color: #2f009c;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 16px;
+}
+
+.navbar-title {
+  font-weight: 400;
+}
+
+.navbar-reports-dropdown {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbar-reports-dropdown:hover {
+  border-bottom: 2px solid #e36a00;
+}
+
+.dropdown-icon-grid {
+  margin-right: 8px;
+}
+
+.dropdown-icon-caret {
+  margin-left: 24px;
+}
