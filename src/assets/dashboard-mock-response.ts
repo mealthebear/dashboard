@@ -253,16 +253,19 @@ const newLayoutResponse: LayoutResponse = {
       elements: [
         {
           name: 'totalOrders',
+          label: 'Total Orders',
           type: 'DATA_POINT',
           width: 4
         },
         {
           name: 'baselineSales',
+          label: 'Baseline Sales',
           type: 'DATA_POINT',
           width: 4
         },
         {
           name: 'totalSales',
+          label: 'Total Sales',
           type: 'DATA_POINT',
           width: 4
         }

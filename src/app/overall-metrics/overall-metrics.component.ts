@@ -45,6 +45,8 @@ export class OverallMetricsComponent {
         dataLabelSet.push(this.currencyPipe.transform(overallMetricsData[metricKey]), 'USD');
       } else if (metricsFormat === 'percent') {
         dataLabelSet.push(this.percentPipe.transform(overallMetricsData[metricKey], '1.2-2'));
+      } else {
+        dataLabelSet.push(overallMetricsData[metricKey]);
       }
       //@ts-ignore
       this.dataLabelSets.push(dataLabelSet);
@@ -52,7 +54,6 @@ export class OverallMetricsComponent {
   }
 
   ngOnInit(): void {
-    console.log(this.dataLabelSets);
     this.getOverallMetricsLabel();
     this.getOverallMetricsLayout();
     this.getOverallMetricsData();
