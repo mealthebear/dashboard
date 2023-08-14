@@ -19,3 +19,26 @@
 .theme-secondary-background {
   background-color: #e36a00;
 }
+
+.light-bottom-border {
+  border-bottom: 1px solid lightgray;
+}
+
+.stat-container {
+  margin-bottom: 16px;
+}
+
+.stat-label {
+  font-size: 1rem;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 600px) {
+  .stat-label {
+    font-size: 0.875rem;
+  }
+}
