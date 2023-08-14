@@ -9,6 +9,7 @@
 
 .navbar-title {
   align-self: center;
+  border-bottom: 2px solid transparent;
   font-weight: 400;
 }
 
