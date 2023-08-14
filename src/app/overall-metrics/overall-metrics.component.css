@@ -24,6 +24,7 @@
 
   .overall-metrics-stats-container {
     flex-flow: row wrap;
+    gap: 32px;
   }
 
   .metric-title {
