@@ -4,17 +4,20 @@
   display: flex;
   justify-content: space-between;
   font-size: 1rem;
-  padding: 16px;
+  padding: 0px 16px
 }
 
 .navbar-title {
+  align-self: center;
   font-weight: 400;
 }
 
 .navbar-reports-dropdown {
   display: flex;
   align-items: center;
+  border-bottom: 2px solid transparent;
   cursor: pointer;
+  padding: 16px 0px;
 }
 
 .navbar-reports-dropdown:hover {
