@@ -20,4 +20,21 @@ export class MetricsService {
     const overallMetricsData = of(backendDataResponse.dataPoints);
     return overallMetricsData;
   }
+  getObservedMetricsLabel(): Observable<string> {
+    const observedMetricsLabel = of(newLayoutResponse.layout[1].label);
+    return observedMetricsLabel;
+  }
+  getObservedMetricsLayout(): Observable<Element[]> {
+    const observedMetricsLayout = of(newLayoutResponse.layout[1].elements);
+    return observedMetricsLayout;
+  }
+
+  getSourceMetricsLabel(): Observable<string> {
+    const sourceMetricsLabel = of(newLayoutResponse.layout[2].label);
+    return sourceMetricsLabel;
+  }
+  getSourceMetricsLayout(): Observable<Element[]> {
+    const sourceMetricsLayout = of(newLayoutResponse.layout[2].elements);
+    return sourceMetricsLayout;
+  }
 }
