@@ -280,11 +280,13 @@ const newLayoutResponse: LayoutResponse = {
       elements: [
         {
           name: 'salesLT',
+          label: 'Sales (LT)',
           type: 'DATA_POINT',
           width: 6
         },
         {
           name: 'cpoLT',
+          label: 'CPO (LT)',
           type: 'DATA_POINT',
           width: 6
         }

@@ -1,4 +1,8 @@
 .metrics-overview-container {
   margin: 0 auto;
-  width: 60%;
+  width: 70%;
+}
+
+.observed-metrics-container {
+  display: flex;
 }

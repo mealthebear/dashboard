@@ -28,4 +28,13 @@ export class MetricsService {
     const observedMetricsLayout = of(newLayoutResponse.layout[1].elements);
     return observedMetricsLayout;
   }
+
+  getSourceMetricsLabel(): Observable<string> {
+    const sourceMetricsLabel = of(newLayoutResponse.layout[2].label);
+    return sourceMetricsLabel;
+  }
+  getSourceMetricsLayout(): Observable<Element[]> {
+    const sourceMetricsLayout = of(newLayoutResponse.layout[2].elements);
+    return sourceMetricsLayout;
+  }
 }

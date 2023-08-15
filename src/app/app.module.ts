@@ -7,6 +7,7 @@ import { OverallMetricsComponent } from './overall-metrics/overall-metrics.compo
 import { CurrencyPipe, PercentPipe } from '@angular/common';
 import { MetricsOverviewComponent } from './metrics-overview/metrics-overview.component';
 import { ObservedMetricsComponent } from './observed-metrics/observed-metrics.component';
+import { SourceMetricsComponent } from './source-metrics/source-metrics.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ObservedMetricsComponent } from './observed-metrics/observed-metrics.co
     NavbarComponent,
     OverallMetricsComponent,
     MetricsOverviewComponent,
-    ObservedMetricsComponent
+    ObservedMetricsComponent,
+    SourceMetricsComponent
   ],
   imports: [
     BrowserModule
