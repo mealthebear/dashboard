@@ -1,0 +1,15 @@
+.summary-grid {
+  display: grid;
+}
+
+.metric-title {
+  padding: 8px 0px;
+  margin-top: 32px;
+}
+
+@media screen and (min-width: 600px) {
+  .metric-title {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
