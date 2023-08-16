@@ -23,7 +23,7 @@
 
   .overall-metrics-stats-container {
     flex-flow: row wrap;
-    gap: 64px;
+    gap: 120px;
   }
 
   .metric-title {
