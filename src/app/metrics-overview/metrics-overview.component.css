@@ -5,4 +5,11 @@
 
 .observed-metrics-container {
   display: flex;
+  flex-flow: column wrap;
+}
+
+@media screen and (min-width: 600px) {
+  .observed-metrics-container {
+    flex-flow: row wrap;
+  }
 }
