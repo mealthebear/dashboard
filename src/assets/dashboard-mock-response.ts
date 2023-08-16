@@ -314,7 +314,7 @@ const newLayoutResponse: LayoutResponse = {
             { name: 'percInc', label: 'Incrementality' },
             { name: 'salesLT', label: 'Sales (LT)' },
             { name: 'salesI', label: 'Sales (i)' },
-            { name: 'percSalesI', label: '& Sales (i)' },
+            { name: 'percSalesI', label: '% Sales (i)' },
             { name: 'ordersLT', label: 'Orders (LT)' },
             { name: 'ordersI', label: 'Orders (i)' },
             { name: 'percOrdersI', label: '% Orders (i)' }
