@@ -142,7 +142,6 @@ export class SummaryComponent {
     this.totaledDataRow[10] = `${Number(
       Number(this.totaledDataRow[10]).toFixed(2)
     )}`;
-    console.log(this.totaledDataRow);
     return dataGrid;
   }
 
