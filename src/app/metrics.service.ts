@@ -1,13 +1,16 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { newLayoutResponse, backendDataResponse } from 'src/assets/dashboard-mock-response';
+import {
+  newLayoutResponse,
+  backendDataResponse,
+} from 'src/assets/dashboard-mock-response';
 import { Element, DataResponse } from 'src/assets/dashboard-mock-response';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class MetricsService {
-  constructor() { }
+  constructor() {}
   getOverallMetricsLabel(): Observable<string> {
     const overallMetricsLabel = of(newLayoutResponse.layout[0].label);
     return overallMetricsLabel;

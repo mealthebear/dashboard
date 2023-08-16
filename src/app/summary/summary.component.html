@@ -1,13 +1,23 @@
 <div>
   <h3 class="light-bottom-border metric-title">Summary</h3>
   <div class="summary-grid">
-    <h3 class="column-title" *ngFor="let columnName of layout">{{ columnName }}</h3>
+    <h3 class="column-title" *ngFor="let columnName of layout">
+      {{ columnName }}
+    </h3>
     <ng-container *ngFor="let row of summaryDataGrid; let columnIndex = index">
-      <span [class.even-row]="columnIndex % 2 === 0" class="data-point" *ngFor="let dataPoint of row">{{ dataPoint }}</span>
+      <span
+        [class.even-row]="columnIndex % 2 === 0"
+        class="data-point"
+        *ngFor="let dataPoint of row"
+        >{{ dataPoint }}</span
+      >
     </ng-container>
-      <span class="data-point total-data-point" *ngFor="let dataPoint of totaledDataRow">
-        {{ dataPoint }}
-      </span>
+    <span
+      class="data-point total-data-point"
+      *ngFor="let dataPoint of totaledDataRow"
+    >
+      {{ dataPoint }}
+    </span>
     <!-- <div class="grid-header">Channel</div>
     <div class="grid-header">Segment</div>
     <div class="grid-header">Tactic</div>

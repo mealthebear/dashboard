@@ -18,12 +18,10 @@ import { SummaryComponent } from './summary/summary.component';
     MetricsOverviewComponent,
     ObservedMetricsComponent,
     SourceMetricsComponent,
-    SummaryComponent
+    SummaryComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [CurrencyPipe, PercentPipe, DecimalPipe],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -65,145 +65,145 @@ const newLayoutResponse: LayoutResponse = {
       label: 'Channel',
       format: 'none',
       type: 'string',
-      aggFn: 'none'
+      aggFn: 'none',
     },
     tactic: {
       label: 'Tactic',
       format: 'none',
       type: 'string',
-      aggFn: 'none'
+      aggFn: 'none',
     },
     segment: {
       label: 'Segment',
       format: 'none',
       type: 'string',
-      aggFn: 'none'
+      aggFn: 'none',
     },
     baselineSales: {
       label: 'Baseline Sales',
       format: 'currency',
       type: 'double',
       digitsInfo: '1.0-0',
-      aggFn: 'sum'
+      aggFn: 'sum',
     },
     percInc: {
       label: '% Incrementality',
       format: 'percent',
       type: 'double',
       digitsInfo: '1.0-2',
-      aggFn: 'none'
+      aggFn: 'none',
     },
     percSalesI: {
       label: '% Sales (i)',
       format: 'percent',
       type: 'double',
       digitsInfo: '1.0-2',
-      aggFn: 'none'
+      aggFn: 'none',
     },
     salesI: {
       label: 'Sales (i)',
       format: 'currency',
       type: 'double',
       digitsInfo: '1.0-0',
-      aggFn: 'sum'
+      aggFn: 'sum',
     },
     ordersI: {
       label: 'Orders (i)',
       format: 'number',
       type: 'double',
       digitsInfo: '1.0-0',
-      aggFn: 'sum'
+      aggFn: 'sum',
     },
     netProfitIPerDollar: {
       label: 'Net Profit (i)/$',
       format: 'currency',
       type: 'double',
       digitsInfo: '1.0-2',
-      aggFn: 'average'
+      aggFn: 'average',
     },
     totalSales: {
       label: 'Total Sales',
       format: 'currency',
       type: 'double',
       digitsInfo: '1.0-0',
-      aggFn: 'sum'
+      aggFn: 'sum',
     },
     totalOrders: {
       label: 'Total Orders',
       format: 'number',
       type: 'double',
       digitsInfo: '1.0-0',
-      aggFn: 'sum'
+      aggFn: 'sum',
     },
     mediaSpend: {
       label: 'Media Spend',
       format: 'currency',
       type: 'double',
       digitsInfo: '1.0-0',
-      aggFn: 'sum'
+      aggFn: 'sum',
     },
     ordersLT: {
       label: 'Orders (LT)',
       format: 'number',
       type: 'double',
       digitsInfo: '1.0-0',
-      aggFn: 'sum'
+      aggFn: 'sum',
     },
     totalSpend: {
       label: 'Total Spend',
       format: 'currency',
       type: 'double',
       digitsInfo: '1.0-0',
-      aggFn: 'sum'
+      aggFn: 'sum',
     },
     spend: {
       label: 'Spend',
       format: 'currency',
       type: 'double',
       digitsInfo: '1.0-0',
-      aggFn: 'sum'
+      aggFn: 'sum',
     },
     salesLT: {
       label: 'Sales (LT)',
       format: 'currency',
       type: 'double',
       digitsInfo: '1.0-0',
-      aggFn: 'sum'
+      aggFn: 'sum',
     },
     cpoLT: {
       label: 'CPO (LT)',
       format: 'currency',
       type: 'double',
       digitsInfo: '1.0-2',
-      aggFn: 'average'
+      aggFn: 'average',
     },
     cpoI: {
       label: 'CPO (I)',
       format: 'currency',
       type: 'double',
       digitsInfo: '1.0-2',
-      aggFn: 'average'
+      aggFn: 'average',
     },
     aov: {
       label: 'AOV',
       format: 'currency',
       type: 'double',
       digitsInfo: '1.0-2',
-      aggFn: 'average'
+      aggFn: 'average',
     },
     percOrdersI: {
       label: '% Orders (i)',
       format: 'number',
       type: 'double',
       digitsInfo: '1.0-2',
-      aggFn: 'average'
+      aggFn: 'average',
     },
     date: {
       label: 'Date',
       format: 'datetime',
       type: 'datetime',
-      aggFn: 'none'
-    }
+      aggFn: 'none',
+    },
   },
   layout: [
     {
@@ -217,33 +217,33 @@ const newLayoutResponse: LayoutResponse = {
           name: 'mediaSpend',
           label: 'Media Spend',
           type: 'DATA_POINT',
-          width: 2
+          width: 2,
         },
         {
           name: 'percSalesI',
           label: '% Sales (i)',
           type: 'DATA_POINT',
-          width: 2
+          width: 2,
         },
         {
           name: 'salesI',
           label: 'Sales (i)',
           type: 'DATA_POINT',
-          width: 4
+          width: 4,
         },
         {
           name: 'cpoI',
           label: 'CPO (i)',
           type: 'DATA_POINT',
-          width: 2
+          width: 2,
         },
         {
           name: 'netProfitIPerDollar',
           label: 'Net Profit (i) / $',
           type: 'DATA_POINT',
-          width: 2
-        }
-      ]
+          width: 2,
+        },
+      ],
     },
     {
       name: 'observedMetrics',
@@ -256,21 +256,21 @@ const newLayoutResponse: LayoutResponse = {
           name: 'totalOrders',
           label: 'Total Orders',
           type: 'DATA_POINT',
-          width: 4
+          width: 4,
         },
         {
           name: 'baselineSales',
           label: 'Baseline Sales',
           type: 'DATA_POINT',
-          width: 4
+          width: 4,
         },
         {
           name: 'totalSales',
           label: 'Total Sales',
           type: 'DATA_POINT',
-          width: 4
-        }
-      ]
+          width: 4,
+        },
+      ],
     },
     {
       name: 'sourceMetrics',
@@ -283,15 +283,15 @@ const newLayoutResponse: LayoutResponse = {
           name: 'salesLT',
           label: 'Sales (LT)',
           type: 'DATA_POINT',
-          width: 6
+          width: 6,
         },
         {
           name: 'cpoLT',
           label: 'CPO (LT)',
           type: 'DATA_POINT',
-          width: 6
-        }
-      ]
+          width: 6,
+        },
+      ],
     },
     {
       name: 'summary',
@@ -317,12 +317,12 @@ const newLayoutResponse: LayoutResponse = {
             { name: 'percSalesI', label: '% Sales (i)' },
             { name: 'ordersLT', label: 'Orders (LT)' },
             { name: 'ordersI', label: 'Orders (i)' },
-            { name: 'percOrdersI', label: '% Orders (i)' }
-          ]
-        }
-      ]
-    }
-  ]
+            { name: 'percOrdersI', label: '% Orders (i)' },
+          ],
+        },
+      ],
+    },
+  ],
 };
 
 const backendDataResponse: FullDataResponse = {
@@ -336,7 +336,7 @@ const backendDataResponse: FullDataResponse = {
     mediaSpend: 701158.457337,
     salesLT: 11944657.4336,
     cpoLT: 10.790020760909858,
-    cpoI: 25.131341014127408
+    cpoI: 25.131341014127408,
   },
   dataSets: [
     {
@@ -356,7 +356,7 @@ const backendDataResponse: FullDataResponse = {
           ordersLT: 935.33,
           ordersI: 71.739811,
           percSalesI: 0.002358656759346973,
-          percOrdersI: 0.0014576818246469572
+          percOrdersI: 0.0014576818246469572,
         },
         {
           channel: 'Catalog',
@@ -372,7 +372,7 @@ const backendDataResponse: FullDataResponse = {
           ordersLT: 26465,
           ordersI: 15879,
           percSalesI: 0.3389212890187929,
-          percOrdersI: 0.322645534897897
+          percOrdersI: 0.322645534897897,
         },
         {
           channel: 'Catalog',
@@ -388,7 +388,7 @@ const backendDataResponse: FullDataResponse = {
           ordersLT: 25,
           ordersI: 24.75,
           percSalesI: 0.0007971529452723739,
-          percOrdersI: 0.0005028954587016154
+          percOrdersI: 0.0005028954587016154,
         },
         {
           channel: 'Catalog',
@@ -404,7 +404,7 @@ const backendDataResponse: FullDataResponse = {
           ordersLT: 2908,
           ordersI: 1337.6800000000003,
           percSalesI: 0.030172758615807604,
-          percOrdersI: 0.027180331199837454
+          percOrdersI: 0.027180331199837454,
         },
         {
           channel: 'Catalog',
@@ -420,7 +420,7 @@ const backendDataResponse: FullDataResponse = {
           ordersLT: 3071,
           ordersI: 2026.8600000000001,
           percSalesI: 0.04680190419263118,
-          percOrdersI: 0.04118378543127096
+          percOrdersI: 0.04118378543127096,
         },
         {
           channel: 'Email',
@@ -436,7 +436,7 @@ const backendDataResponse: FullDataResponse = {
           ordersLT: 16904.91,
           ordersI: 845.2455,
           percSalesI: 0.028056863819107446,
-          percOrdersI: 0.017174550441938434
+          percOrdersI: 0.017174550441938434,
         },
         {
           channel: 'Facebook',
@@ -452,7 +452,7 @@ const backendDataResponse: FullDataResponse = {
           ordersLT: 1896,
           ordersI: 606.8720000000001,
           percSalesI: 0.01956834749714632,
-          percOrdersI: 0.012331037285380474
+          percOrdersI: 0.012331037285380474,
         },
         {
           channel: 'Facebook',
@@ -468,7 +468,7 @@ const backendDataResponse: FullDataResponse = {
           ordersLT: 828,
           ordersI: 127.6947,
           percSalesI: 0.0037402924801267124,
-          percOrdersI: 0.0025946296860713198
+          percOrdersI: 0.0025946296860713198,
         },
         {
           channel: 'Facebook',
@@ -484,7 +484,7 @@ const backendDataResponse: FullDataResponse = {
           ordersLT: 3146,
           ordersI: 3735.9308,
           percSalesI: 0.09557791718488345,
-          percOrdersI: 0.07591040942801991
+          percOrdersI: 0.07591040942801991,
         },
         {
           channel: 'Google',
@@ -500,7 +500,7 @@ const backendDataResponse: FullDataResponse = {
           ordersLT: 5003.7372,
           ordersI: 800.597952,
           percSalesI: 0.028577181680584176,
-          percOrdersI: 0.016267356537640963
+          percOrdersI: 0.016267356537640963,
         },
         {
           channel: 'Google',
@@ -516,7 +516,7 @@ const backendDataResponse: FullDataResponse = {
           ordersLT: 3728.9175,
           ordersI: 2386.5072,
           percSalesI: 0.07893224650371648,
-          percOrdersI: 0.04849145992075587
+          percOrdersI: 0.04849145992075587,
         },
         {
           channel: 'Google',
@@ -532,11 +532,11 @@ const backendDataResponse: FullDataResponse = {
           ordersLT: 70.2284,
           ordersI: 56.885004,
           percSalesI: 0.0021266968647946334,
-          percOrdersI: 0.0011558468759524537
-        }
-      ]
-    }
-  ]
+          percOrdersI: 0.0011558468759524537,
+        },
+      ],
+    },
+  ],
 };
 
 export { newLayoutResponse, backendDataResponse };
