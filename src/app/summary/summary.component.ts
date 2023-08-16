@@ -27,13 +27,13 @@ export class SummaryComponent {
     '',
     '0',
     '0',
-    '',
+    '-',
     '0',
     '0',
-    '',
+    '-',
     '0',
     '0',
-    '',
+    '-',
   ];
 
   getSummaryData(): void {
