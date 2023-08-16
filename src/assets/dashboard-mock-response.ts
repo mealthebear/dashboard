@@ -2,7 +2,7 @@ export interface DataResponse {
   [index: string]: string | number;
 }
 
-interface DatasetResponse {
+export interface DatasetResponse {
   name: string;
   data: DataResponse[];
 }
@@ -32,8 +32,9 @@ export interface Element {
   fields?: DatasetFields[];
 }
 
-interface DatasetFields {
+export interface DatasetFields {
   name: string;
+  label: string;
 }
 
 interface FieldDefinitions {
@@ -305,18 +306,18 @@ const newLayoutResponse: LayoutResponse = {
           type: 'DATA_SET',
           width: 12,
           fields: [
-            { name: 'channel' },
-            { name: 'segment' },
-            { name: 'tactic' },
-            { name: 'totalSpend' },
-            { name: 'mediaSpend' },
-            { name: 'percInc' },
-            { name: 'salesLT' },
-            { name: 'salesI' },
-            { name: 'percSalesI' },
-            { name: 'ordersLT' },
-            { name: 'ordersI' },
-            { name: 'percOrdersI' }
+            { name: 'channel', label: 'Channel' },
+            { name: 'segment', label: 'Segment' },
+            { name: 'tactic', label: 'Tactic' },
+            { name: 'totalSpend', label: 'Total Spend' },
+            { name: 'mediaSpend', label: 'Media Spend' },
+            { name: 'percInc', label: 'Incrementality' },
+            { name: 'salesLT', label: 'Sales (LT)' },
+            { name: 'salesI', label: 'Sales (i)' },
+            { name: 'percSalesI', label: '& Sales (i)' },
+            { name: 'ordersLT', label: 'Orders (LT)' },
+            { name: 'ordersI', label: 'Orders (i)' },
+            { name: 'percOrdersI', label: '% Orders (i)' }
           ]
         }
       ]

@@ -1,10 +1,21 @@
 .summary-grid {
   display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
 }
 
 .metric-title {
   padding: 8px 0px;
   margin-top: 32px;
+}
+
+.column-title {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.data-point {
+  font-size: 0.875rem;
 }
 
 @media screen and (min-width: 600px) {
