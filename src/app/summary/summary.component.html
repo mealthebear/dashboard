@@ -5,6 +5,9 @@
     <ng-container *ngFor="let row of summaryDataGrid; let columnIndex = index">
       <span [class.even-row]="columnIndex % 2 === 0" class="data-point" *ngFor="let dataPoint of row">{{ dataPoint }}</span>
     </ng-container>
+      <span class="data-point total-data-point" *ngFor="let dataPoint of totaledDataRow">
+        {{ dataPoint }}
+      </span>
     <!-- <div class="grid-header">Channel</div>
     <div class="grid-header">Segment</div>
     <div class="grid-header">Tactic</div>
