@@ -1,0 +1,41 @@
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* gap: 16px; */
+}
+
+.metric-title {
+  padding: 8px 0px;
+  margin-top: 32px;
+}
+
+.column-title {
+  border-bottom: 2px solid #000;
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 8px;
+}
+
+.data-point {
+  font-size: 0.875rem;
+  padding: 8px;
+}
+
+.total-data-point {
+  border-top: 2px solid #000;
+}
+
+.even-row {
+  background-color: #eee;
+}
+
+.odd-row {
+  background-color: #fff;
+}
+
+@media screen and (min-width: 600px) {
+  .metric-title {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}

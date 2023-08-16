@@ -1,8 +1,15 @@
 .metrics-overview-container {
   margin: 0 auto;
-  width: 75%;
+  width: 90%;
 }
 
 .observed-metrics-container {
   display: flex;
+  flex-flow: column wrap;
+}
+
+@media screen and (min-width: 600px) {
+  .observed-metrics-container {
+    flex-flow: row wrap;
+  }
 }

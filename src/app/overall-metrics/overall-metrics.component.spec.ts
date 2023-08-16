@@ -8,7 +8,7 @@ describe('OverallMetricsComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [OverallMetricsComponent]
+      declarations: [OverallMetricsComponent],
     });
     fixture = TestBed.createComponent(OverallMetricsComponent);
     component = fixture.componentInstance;
